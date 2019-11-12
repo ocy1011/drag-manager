@@ -12,6 +12,8 @@ export default class {
   }
 
   addDragListener(element) {
+    element.style.userDrag = "none";
+    element.style.userSelect = "none";
     element.addEventListener("mousedown", this.dragStart.bind(this, element));
   }
 
